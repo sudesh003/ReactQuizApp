@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing:  border-box;
+    font-family:  'Roboto',  sans-serif;
+}
+body {
+    min-height:  100vh;
+    background-color: #282c34;
+}
+.homebtn{
+    padding: 2vh 2vw;
+}
+.homebutton{
+    width: 40px;
+    height: 30px;
+    background-color: #61dafb;
+    border-radius: 30px;
+    border: solid black;
+    cursor: pointer;
+}
+.fw-bold{
+    min-height: 15vh;
+    font-size: large;
+}
+.container {
+    min-height: 50vh;
+    margin:  0px auto;
+    background-color: #282c34;
+    color: white;
+    padding:  0px 15px;
+}
+label.box {
+    display:  flex;
+    min-height: 10vh;
+    margin-top:  20px;
+    padding:  10px 12px;
+    border-radius:  5px;
+    cursor:  pointer;
+    border:  1px solid white;
+}
+#one:checked~label.first,  #two:checked~label.second,  #three:checked~label.third,  #four:checked~label.forth{
+    border-color: cyan;
+}
+#one:checked~label.first .circle,  #two:checked~label.second .circle,  #three:checked~label.third .circle,  #four:checked~label.forth .circle{
+    border:  6px solid rgba(57, 146, 146, 0.582);
+    background-color:  white;
+}
+label.box:hover {
+    transition: 0.3s;
+    background:  grey;
+}
+label.box .course {
+    display:  flex;
+    align-items:  center;
+    width:  100%
+}
+label.box .circle {
+    flex: 0 0 20px; /* Change this to your desired constant size */
+    height: 20px; /* Change this to your desired constant height */
+    border-radius: 50%;
+    margin-right: 10px; /* You can adjust this margin as desired */
+    border: 2px solid white;
+}
+input[type="radio"] {
+    display:  none;
+}
+.btn.btn-primary {
+    border-radius:  25px;
+    margin-top:  20px;
+}
+@media(max-width: 480px) {
+    .subject {
+        font-size:  1rem;
+    }
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 10vw;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    .prevbtn,
+    .submitbtn,
+    .nextbtn {
+      width: 15vw;
+      height: 6vh;
+      border-radius: 15px;
+      border:3px solid #282c34;
+      font-size: .9rem;
+      font-weight: bold;
+      background-color: wheat;
+    }
+    .submitbtn{
+        width: 17vw;
+    }
+  }
+  
+  @media (min-width: 481px) {
+    .prevbtn,
+    .submitbtn,
+    .nextbtn {
+      width: 15vw;
+      height: 7vh;
+      border-radius: 15px;
+      border: 3px solid #282c34;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: wheat;
+      cursor: pointer;
+    }
+  }
+  
